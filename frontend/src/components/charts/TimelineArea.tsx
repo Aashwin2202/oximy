@@ -22,7 +22,7 @@ export function TimelineArea({
   }));
   return (
     <ResponsiveContainer width="100%" height={320}>
-      <AreaChart data={rows} margin={{ left: 10, right: 20 }}>
+      <AreaChart data={rows} margin={{ top: 16, left: 10, right: 20, bottom: 0 }}>
         <defs>
           <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="#60a5fa" stopOpacity={0.5} />
