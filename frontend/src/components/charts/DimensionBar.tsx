@@ -16,7 +16,7 @@ export function DimensionBar({
   data: DimensionCount[];
   metric: "cost" | "events" | "tokens";
 }) {
-  const rows = data.map((d) => ({ key: d.key, value: d[metric] }));
+  const rows = data.map((d) => ({ key: d.key, value: Number(d[metric]) }));
   return (
     <ResponsiveContainer width="100%" height={240}>
       <BarChart data={rows} margin={{ left: 10, right: 10 }}>
