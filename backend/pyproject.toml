@@ -1,0 +1,16 @@
+[project]
+name = "ai-usage-backend"
+version = "0.1.0"
+description = "AI Usage Intelligence Dashboard - backend + collectors"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy>=2.0",
+    "psycopg[binary]>=3.2",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
